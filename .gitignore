@@ -107,3 +107,4 @@ venv.bak/
 /train.csv
 /sample_submission.csv
 .idea/
+/input/
