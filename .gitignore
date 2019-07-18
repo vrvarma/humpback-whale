@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+/test.zip
+/train.zip
+/train.csv
+/sample_submission.csv
