@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def map5_per_image(label, predictions):
     """Computes the precision score of one image.
 
@@ -15,11 +14,14 @@ def map5_per_image(label, predictions):
     -------
     score : double
     """
+    score = 0
     try:
-        return 1 / (predictions[:5].index(label) + 1)
+        score = 1 / (predictions[:5].index(label) + 1)
+        # print(label, score)
+        return score
+
     except ValueError:
         return 0.0
-
 
 def map5_per_set(labels, predictions):
     """Computes the average over multiple images.
@@ -35,4 +37,4 @@ def map5_per_set(labels, predictions):
     -------
     score : double
     """
-    return np.mean([map5_per_image(l, p) for l, p in zip(labels, predictions)])
+    return np.mean([map5_per_image(l, p) for l,p in zip(labels, predictions)])
