@@ -13,6 +13,19 @@ Udacity MLND capstone project
   * conda activate ml-project
   * cd humpback-whale
   * pip install -r requirements.txt
+
+## Download the Kaggle data set
+Download the dataset from Kaggle, by following these steps
+* Install [Kaggle API]: https://github.com/Kaggle/kaggle-api.  Once the kaggle api is installed, do the following.
+* Generate/Build  kaggle.json file from your Kaggle account
+* mkdir -p ~/.kaggle
+* cp kaggle.json ~/.kaggle/kaggle.json
+* chmod 600 ~/.kaggle/kaggle.json
+* cd humpback-whale
+* kaggle competitions download -c humpback-whale-identification 
+* rm -rf input
+* mkdir -p input 
+* unzip -q -d input/train train.zip
 ## Running the software
   * jupyter notebook
   * Select udacity-capstone.ipynb
