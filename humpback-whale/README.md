@@ -28,7 +28,6 @@ Download the dataset from Kaggle, by following these steps
 * rm -rf input
 * mkdir -p input 
 * unzip -q -d input/train train.zip
-* unzip -q -d images test_images.zip
 ## Running the software
   * jupyter notebook
   * Select udacity-capstone.ipynb
